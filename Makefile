@@ -4,18 +4,18 @@
 
 # If you move this project you can change the directory 
 # to match your GBDK root directory (ex: GBDK_HOME = "C:/GBDK/"
-GBDK_HOME = ../../../
+GBDK_HOME = ~/projects/gbdk
 
-LCC = $(GBDK_HOME)bin/lcc
+LCC = $(GBDK_HOME)/bin/lcc
 
 # You can uncomment the line below to turn on debug output
-# LCC = $(LCC) -debug
+#LCC = $(LCC) -debug
 
 # You can set the name of the .gb ROM file here
 PROJECTNAME    = WORDLE
 
 BINS	    = $(PROJECTNAME).gb
-CSOURCES   := $(wildcard *.c)
+CSOURCES   := $(filter-out hash_generator.c, $(wildcard *.c))
 ASMSOURCES := $(wildcard *.s)
 
 all:	$(BINS)
