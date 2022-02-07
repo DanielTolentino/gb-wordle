@@ -209,9 +209,9 @@ void show_win() {
     box(0, 0, 160, 144, M_FILL);
     gotogxy(0, 8);
     color(WHITE, BLACK, M_NOFILL);
-    gprint("     You won!!!");
+    gprint("     Voce Ganhou!!!");
     gotogxy(0, 9);
-    gprintf("   %d/6 - Congrats!", guess_nr);
+    gprintf("   %d/6 - Parabens!", guess_nr);
     waitpad(J_START | J_A);
     reset();
 }
@@ -222,7 +222,7 @@ void show_loose() {
     box(0, 0, 160, 144, M_FILL);
     gotogxy(0, 8);
     color(WHITE, BLACK, M_NOFILL);
-    gprint(" You lost. Sorry!");
+    gprint(" Voce Perdeu!");
     waitpad(J_START | J_A);
     reset();
 }
@@ -259,7 +259,7 @@ void run_wordle(void)
     }
 
     gotogxy(2, 0);
-    gprint("GameBoy  WORDLE");
+    gprint("GameBoy  TERMOOO");
     draw_keyboard(0, kb_vert_offset);
 
     color(LTGREY, WHITE, M_NOFILL);
