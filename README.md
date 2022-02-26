@@ -1,6 +1,6 @@
 # gb-wordle
 
-A WORDLE clone for the Nintendo Game Boy!
+A WORDLE clone for the Nintendo Game Boy! (PT-BR Version)
 
 You can play it online [here](https://nezza.github.io/gbwordle/)!
 
